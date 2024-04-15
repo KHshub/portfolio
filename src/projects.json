@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Roots of Resilience",
+        "imageSrc": "./src/assets/project-RoR.png",
+        "description": "A 2D pixel art game developed for a gaem jam.",
+        "skills": ["Game Development", "Godot", "GDScript", "Aseprite"],
+        "demo": "https://kateam.itch.io/roots-of-resilience"
+    },
+    {
+        "title": "CS Hub",
+        "imageSrc": "project-CSHub.png",
+        "description": "A website developed for a graduation project.",
+        "skills": ["Web Development", "Figma", "HTML", "CSS", "JavaScript", "Bootstrap"],
+        "demo": "https://khshub.github.io/CS-Hub"
+     },
+    {
+        "title": "Personal Portfolio",
+        "imageSrc": "project-portfolio.png",
+        "description": "A personal portfolio developed to showcase my skills.",
+        "skills": ["Web Development", "React", "Bootstrap", "Github"],
+        "demo": "https://kateam.itch.io/roots-of-resilience"
+    }
+]
