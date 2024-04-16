@@ -1,0 +1,38 @@
+@font-face {
+  font-family: Roboto-Mono;
+  src: url(./fonts/RobotoMono.ttf);
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(./fonts/Poppins-Regular.ttf);
+}
+
+*{
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+:root {
+  /* Color Palette */
+  --black-text: #000;
+  --white-text: #FFFFFF;
+  --color-primary: #576cbc;
+  --color-secondary: #19376d;
+  --color-dark: #1e0935;
+  --color-bg: #05020f;
+  --color-grey: #1f1f1f;
+  --color-blue: #17A2B8;
+  --color-purple: #8377C6;
+  --color-yellow: #FCF0CC;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+

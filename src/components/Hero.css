@@ -1,0 +1,148 @@
+.hero-container {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.hero-title {
+    font-size: 70px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 60%, rgba(255, 255, 255, 0) 120%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+/* Typewriter Effect Style */
+.wrapper{
+    display: inline-flex;
+}
+
+.wrapper ul{
+    margin:0;
+    padding-left: 1rem;
+}
+
+.wrapper .static-text {
+    margin-top: 15px;
+    font-size:50px;
+    font-weight: 400;
+    font-family: Roboto-Mono;
+}
+
+.wrapper .dynamic-text {
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+    font-family: Roboto-Mono;
+}
+
+.dynamic-text li{
+    list-style: none;
+    text-align: left;
+    font-size: 50px;
+    font-weight: 300;
+    font-family: Roboto-Mono;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(4) infinite;
+}
+
+@keyframes slide {
+    100%{
+        top: -360px;
+    }
+}
+
+.dynamic-text li {
+    position: relative;
+    color: var( --color-purple);
+}
+
+.dynamic-text li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-bg);
+    border-left: 2px solid var( --color-purple);
+    animation: typing 1.5s steps(10) infinite;
+}
+
+@keyframes typing {
+    100%{
+        left:100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+
+@media screen and (max-width: 770px){
+    .hero-title {
+        font-size: 50px;
+    }
+    .wrapper .static-text {
+        padding-top: 5px;
+        font-size: 35px;
+    }
+    .dynamic-text li{
+        font-size: 35px;
+    }
+}
+
+.topBlur{
+    position: absolute;
+    width: 50vw;
+    height: 20vh;
+    min-width: 80px;
+    min-height: 150px;
+    top: -12vw;
+    left: -15vw;
+    border: 764px;
+    background-color: var(--color-purple);
+    filter: blur(100px);
+    border-radius:25%;
+    z-index: 0;
+    animation: moveHorizontal 20s linear infinite;
+    overflow: hidden;
+}
+
+.bottomBlur{
+    position: absolute;
+    width: 8vw;
+    height: 35vh;
+    min-width: 60px;
+    min-height: 150px;
+    top: 400px;
+    right: 0vw;
+    border: 764px;
+    background-color: var(--color-yellow);
+    filter: blur(100px);
+    border-radius:25%;
+    z-index: 0;
+    animation: moveVertical 15s linear infinite;
+    overflow: hidden;
+}
+
+@keyframes moveVertical {
+    0% {
+      transform: translateY(-50%);
+    }
+    50% {
+      transform: translateY(50%);
+    }
+    100% {
+      transform: translateY(-50%);
+    }
+}
+
+@keyframes moveHorizontal {
+    0% {
+      transform: translateX(-50%);
+    }
+    50% {
+      transform: translateX(50%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+}
