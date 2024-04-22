@@ -1,0 +1,62 @@
+.contact-container{
+  display: flex;
+  justify-content: center;
+}
+
+.contact-row{
+  display: flex;
+  flex-direction: row;
+  justify-content:baseline;
+  align-items: center;
+  text-align: left;
+  margin-top: 15px;
+}
+
+.icon-border{
+  border-right: 2px solid rgba(128, 128, 128, 0.346);
+  margin-right: 20px;
+}
+
+.email{
+  text-decoration: none;
+  color: var(--color-yellow);
+}
+
+.email:hover{
+  text-decoration: none;
+  color: var(--color-purple);
+}
+
+.icon-style img{
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.icon-style img:hover{
+  border-radius: 10px;
+  background-color:rgba(161, 159, 159, 0.346);
+}
+
+.icon-text h6{
+  letter-spacing: 1.5px;
+  color: var(--color-purple);
+}
+
+.icon-text{
+  margin-left: 5px;
+  text-align: left;
+}
+
+.contact-icon-git img{
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  border-radius: 30px;
+  background-color: rgba(165, 215, 323, 0.22);
+}
+
+.contact-icon-git img:hover{
+  border-radius: 30px;
+  background-color:rgba(161, 159, 159, 0.346);
+}
